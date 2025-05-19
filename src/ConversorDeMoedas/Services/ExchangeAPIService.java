@@ -11,7 +11,7 @@ import java.net.http.HttpResponse;
 
 public class ExchangeAPIService {
     String BASE_URL = "https://v6.exchangerate-api.com/v6/";
-    String API_KEY = "2073dfd35ca99adbf1ca7408";
+    String API_KEY = "COLOCAR SUA CHAVE AQUI";
     String PARAM = "/pair/";
 
     public Double RequestPairExchange(CURRENCY_TYPE typeOfExchange, CURRENCY_TYPE typeToExchange, Double amount)
