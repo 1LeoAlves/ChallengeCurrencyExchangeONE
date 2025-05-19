@@ -1,24 +1,32 @@
-# Conversor de Dados com API Externa
+# Conversor de Moedas
 
-Este projeto é um **conversor de dados** que utiliza uma **API externa** para realizar requisições HTTP e processar os dados retornados no formato `.json`. O projeto é desenvolvido em **Java** e utiliza as bibliotecas `HttpClient`, `GSON` e um sistema de `Listener` para lidar com eventos de resposta.
+Um conversor de moedas desenvolvido em **Java**, utilizando:
 
-## 📌 Funcionalidades
+- [`HttpClient`](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html) para realizar chamadas HTTP à API externa;
+- Biblioteca [`Gson`](https://github.com/google/gson) para leitura e manipulação de dados JSON;
+- A API pública [ExchangeRate API](https://www.exchangerate-api.com/) para obter taxas de câmbio em tempo real.
 
-- Conexão com API externa usando `HttpClient`;
-- Leitura e conversão de arquivos `.json` utilizando a biblioteca `GSON`;
-- Sistema de `Listener` para resposta assíncrona;
-- Estrutura modular e de fácil manutenção.
+## 🔗 API Utilizada
 
-## 🚀 Tecnologias Utilizadas
+- **URL Base:** `https://v6.exchangerate-api.com/v6/`
+- Essa API fornece taxas de câmbio atualizadas com suporte a múltiplas moedas.
 
-- **Java 11+**
-- **HttpClient** (java.net.http)
-- **GSON** (com.google.gson)
+## 💡 Funcionalidades
 
-🙋 Autor
+- Conversão entre moedas com taxa de câmbio atualizada;
+- Interface simples e objetiva;
+- Comunicação via `HttpClient`;
+- Análise de JSON com `Gson`.
+
+## 📦 Requisitos
+
+- Java 11 ou superior
+- Internet ativa para consumir a API externa
+- Biblioteca Gson adicionada ao projeto
+
+🧑‍💻 Autor
 Leonardo Alves Moreno
 
-GitHub: github.com/LeonardoAlvesMoreno
 © 2025 Leonardo Alves Moreno. Todos os direitos reservados.
 
 ---
